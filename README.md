@@ -28,7 +28,6 @@ El repositorio está organizado en carpetas, cada una dedicada a una certificaci
 2. **Sigue las instrucciones:** Dentro de cada carpeta encontrarás una guía que te orientará sobre cómo utilizar el contenido.
 3. **Practica y aprende:** Resuelve los ejercicios y aprovecha los recursos compartidos para consolidar tus conocimientos.
 
-
 ## 🤝 Contribuciones
 
 ¿Tienes ideas, sugerencias o quieres colaborar? ¡Eres bienvenido! Abre un issue o envía un pull request para mejorar el contenido o agregar más recursos.
