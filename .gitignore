@@ -1,2 +1,4 @@
 *.zip
 bootstrap
+go.mod
+go.sum
