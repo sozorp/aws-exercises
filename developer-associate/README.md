@@ -14,7 +14,7 @@ La certificación **AWS Certified Developer Associate** es de nivel medio, ideal
    Resolví múltiples exámenes de práctica para medir mi progreso y comprender mejor el formato del examen oficial.
 
 4. **Ejercicios Prácticos:**
-   Realicé **24 ejercicios prácticos**, uno cada día, para aplicar los conceptos aprendidos. Los ejercicios abarcaron el uso de la consola de AWS, la CLI y el SDK, y todos los ejemplos de código están escritos en **Go**. Sin embargo, puedes adaptarlos al lenguaje de programación que prefieras.
+   Realicé **26 ejercicios prácticos**, uno cada día, para aplicar los conceptos aprendidos. Los ejercicios abarcaron el uso de la consola de AWS, la CLI y el SDK, y todos los ejemplos de código están escritos en **Go**. Sin embargo, puedes adaptarlos al lenguaje de programación que prefieras.
 
    Los ejercicios están organizados en una carpeta, donde cada día contiene una descripción y solución detallada del problema abordado.
 
@@ -31,9 +31,11 @@ La certificación **AWS Certified Developer Associate** es de nivel medio, ideal
 ### Links de Cursos y Exámenes de Práctica
 
 - **Cursos que tomé:**
+
   - [[Español] Curso de AWS Certified Developer Associate DVA-C02](https://www.udemy.com/course/aws-certified-developer-associate-dva/?couponCode=KEEPLEARNING)
 
 - **Exámenes de práctica:**
+
   - [Pack de 6 Exámenes de práctica (de pago)](https://www.udemy.com/course/examenes-practicos-aws-certified-developer-associate/?couponCode=KEEPLEARNING)
 
 - **Flashcards (Anki):**
