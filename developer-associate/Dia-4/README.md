@@ -1,4 +1,4 @@
-# Día 4:
+# Día 4: Vamos a incorporar más servicios para un flujo más complejo, añadiendo SNS (Simple Notification Service) junto con SQS y Lambda
 
 ## Escenario
 
@@ -45,14 +45,16 @@ Estás desarrollando un sistema de notificaciones que necesita distribuir mensaj
 
 5. Probar el Flujo:
    - Publica un mensaje en el tema SNS usando la consola o AWS CLI:
+
    ```bash
    aws sns publish --topic-arn <ARN_DE_NOTIFICATIONTOPIC> --message "Test notification message"
    ```
+
    - Verifica
      - Que el mensaje llegue a la cola SQS (ProcessingQueue) y que la función Lambda lo procese.
      - Que el mensaje se reciba en el correo electrónico configurado.
 
-## Preguntas de Práctica Asociadas:
+## Preguntas de Práctica Asociadas
 
 - ¿Cuál es la diferencia entre SNS y SQS en términos de patrones de mensajería?
 - ¿Cómo podrías escalar este flujo para manejar grandes volúmenes de mensajes?
