@@ -10,7 +10,7 @@ import (
 	"github.com/aws/aws-lambda-go/lambda"
 )
 
-type Claims struct {
+type User struct {
 	Email    string `json:"email"`
 	Sub      string `json:"sub"`
 	Nickname string `json:"nickname"`
@@ -42,9 +42,9 @@ func Handler(ctx context.Context, request events.APIGatewayProxyRequest) (events
 		}, nil
 	}
 
-	var claims Claims
+	var user User
 
-	err1 := InterfaceToStruct(authContext, &claims)
+	err1 := InterfaceToStruct(authContext, &user)
 
 	if err1 != nil {
 		log.Printf("Error marshaling response: %v", err1)
@@ -57,7 +57,7 @@ func Handler(ctx context.Context, request events.APIGatewayProxyRequest) (events
 
 	return events.APIGatewayProxyResponse{
 		StatusCode: 200,
-		Body:       fmt.Sprintf("Hello, %s! (%s) Your user ID is %s, and email is %s", claims.Name, claims.Nickname, claims.Sub, claims.Email),
+		Body:       fmt.Sprintf("Hello, %s! (%s) Your user ID is %s, and email is %s", user.Name, user.Nickname, user.Sub, user.Email),
 	}, nil
 }
 
