@@ -87,6 +87,9 @@ Tu aplicación debe procesar un flujo constante de eventos de datos. Los datos l
 - ¿Cómo manejarías una gran cantidad de datos simultáneos en el stream?
 - ¿Qué harías si un evento no puede ser procesado por Lambda?
 
+> [!IMPORTANT]
+> Conserva la infraestructura para el siguiente ejercicio, o al menos solo la tabla DynamoDB.
+
 > [!TIP]
 > Puedes usar el archivo `lambda.sh` para automatizar la construcción y empaquetado de tu función Lambda.
 
