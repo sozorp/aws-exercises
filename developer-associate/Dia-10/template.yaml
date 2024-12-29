@@ -1,0 +1,76 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >
+  CloudFormation template to create:
+  - S3 bucket with Lambda notification for object creation
+  - SQS queue for additional processing
+  - IAM Role and permissions for Lambda
+
+Parameters:
+  BucketName:
+    Type: String
+    Description: Name of the S3 bucket to be created
+    Default: cf-example-bucket-diegosiac
+
+Resources:
+  S3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Ref BucketName
+      NotificationConfiguration:
+        LambdaConfigurations:
+          - Event: s3:ObjectCreated:*
+            Function: !GetAtt LambdaFunction.Arn
+    DependsOn: LambdaPermission
+
+  SQSQueue:
+    Type: AWS::SQS::Queue
+    Properties:
+      QueueName: cf-example-dql-diegosiac
+
+  LambdaExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: LambdaS3Policy
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action:
+                  - s3:PutObject
+                  - s3:GetObject
+                Resource: !Sub "arn:aws:s3:::${BucketName}/*"
+              - Effect: Allow
+                Action:
+                  - sqs:SendMessage
+                Resource: !GetAtt SQSQueue.Arn
+
+  LambdaFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      Runtime: provided.al2
+      Handler: main
+      Role: !GetAtt LambdaExecutionRole.Arn
+      Code:
+        S3Bucket: exercises-developer
+        S3Key: function.zip
+      DeadLetterConfig:
+        TargetArn: !GetAtt SQSQueue.Arn
+      Environment:
+        Variables:
+          LOG_LEVEL: ERROR
+
+  LambdaPermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !Ref LambdaFunction
+      Action: lambda:InvokeFunction
+      Principal: s3.amazonaws.com
+      SourceArn: !Sub "arn:aws:s3:::${BucketName}"
