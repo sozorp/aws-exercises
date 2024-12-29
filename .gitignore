@@ -1,4 +1,13 @@
 *.zip
 bootstrap
+
+# go files
 go.mod
 go.sum
+bin
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
