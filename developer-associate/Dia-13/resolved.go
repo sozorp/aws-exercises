@@ -96,7 +96,7 @@ func uploadToS3(ctx context.Context, bucket, key string, body io.Reader) error {
 	return nil
 }
 
-func reziseImagetoThumbnail(input io.ReadCloser, maxWidth, maxHeight uint) (io.Reader, error) {
+func resizeImageToThumbnail(input io.ReadCloser, maxWidth, maxHeight uint) (io.Reader, error) {
 	defer input.Close()
 
 	var buf bytes.Buffer
@@ -139,7 +139,7 @@ func Handler(ctx context.Context, event events.S3Event) error {
 			return err
 		}
 
-		thumbnailFile, err := reziseImagetoThumbnail(file, 128, 128)
+		thumbnailFile, err := resizeImageToThumbnail(file, 128, 128)
 
 		if err != nil {
 			return err
