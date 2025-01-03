@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo Logging in to Amazon ECR...
+      - $(aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION)
+  build:
+    commands:
+      - echo Building the Docker image...
+      - docker build -t web-app .
+      - docker tag web-app:latest <account-id>.dkr.ecr.<region>.amazonaws.com/web-app:latest
+  post_build:
+    commands:
+      - echo Pushing the Docker image...
+      - docker push <account-id>.dkr.ecr.<region>.amazonaws.com/web-app:latest
+      - echo Build completed on `date`
