@@ -14,7 +14,7 @@ El repositorio está organizado en carpetas, cada una dedicada a una certificaci
 
 - [x] AWS Certified Cloud Practitioner
 - [x] AWS Certified Developer – Associate
-- [ ] AWS Certified Solutions Architect – Associate
+- [ ] AWS Certified Solutions Architect – Associate ***(En progreso)***
 - [ ] AWS Certified SysOps Administrator – Associate
 - [ ] AWS Certified Solutions Architect – Professional
 - [ ] AWS Certified DevOps Engineer – Professional
