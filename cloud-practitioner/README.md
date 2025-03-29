@@ -33,7 +33,7 @@ Mi preparación se basó en tres pilares fundamentales:
   - [Pack de 6 Exámenes de práctica (de pago)](https://www.udemy.com/course/examenes-certified-cloud-practitioner-aws/)
   
 - **Flashcards (Anki):**
-  - [Deck de Anki](https://github.com/diegosiac/aws-exercises/blob/main/cloud-practitioner/AWS%20Cloud%20Practitioner.apkg)
+  - [Deck de Anki](https://ankiweb.net/shared/info/1190493213)
 
 ---
 
