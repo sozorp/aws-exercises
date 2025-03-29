@@ -39,7 +39,7 @@ La certificación **AWS Certified Developer Associate** es de nivel medio, ideal
   - [Pack de 6 Exámenes de práctica (de pago)](https://www.udemy.com/course/examenes-practicos-aws-certified-developer-associate/?couponCode=KEEPLEARNING)
 
 - **Flashcards (Anki):**
-  - [Deck de Anki](https://github.com/diegosiac/aws-exercises/blob/main/developer-associate/AWS%20Developer%20Asociate.apkg)
+  - [Deck de Anki](https://ankiweb.net/shared/info/887818636)
 
 ---
 
