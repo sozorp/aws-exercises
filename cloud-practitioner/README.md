@@ -28,6 +28,7 @@ Mi preparación se basó en tres pilares fundamentales:
 
 - **Cursos que tomé:**
   - [[Español] AWS Certified Cloud Practitioner (CLF-C02) - 2024](https://www.udemy.com/course/certified-cloud-practitioner-aws/)
+   - [Curso de Midudev](https://midu.link/aws)
 
 - **Exámenes de práctica:**
   - [Pack de 6 Exámenes de práctica (de pago)](https://www.udemy.com/course/examenes-certified-cloud-practitioner-aws/)
