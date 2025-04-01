@@ -1,4 +1,4 @@
-# Mi Experiencia con la Certificación AWS Certified Developer Associate (En progreso)
+# Mi Experiencia con la Certificación AWS Certified Developer Associate
 
 La certificación **AWS Certified Developer Associate** es de nivel medio, ideal para desarrolladores que desean profundizar en el ecosistema de AWS. Aunque requiere un esfuerzo mayor que la Cloud Practitioner, con constancia y un plan de estudio bien estructurado, es totalmente alcanzable. Aquí comparto mi experiencia y los recursos que utilicé para aprobarla.
 
@@ -14,7 +14,7 @@ La certificación **AWS Certified Developer Associate** es de nivel medio, ideal
    Resolví múltiples exámenes de práctica para medir mi progreso y comprender mejor el formato del examen oficial.
 
 4. **Ejercicios Prácticos:**
-   Realicé **26 ejercicios prácticos**, uno cada día, para aplicar los conceptos aprendidos. Los ejercicios abarcaron el uso de la consola de AWS, la CLI y el SDK, y todos los ejemplos de código están escritos en **Go**. Sin embargo, puedes adaptarlos al lenguaje de programación que prefieras.
+   Realicé **20 ejercicios prácticos**, uno cada día, para aplicar los conceptos aprendidos. Los ejercicios abarcaron el uso de la consola de AWS, la CLI y el SDK, y todos los ejemplos de código están escritos en **Go**. Sin embargo, puedes adaptarlos al lenguaje de programación que prefieras.
 
    Los ejercicios están organizados en una carpeta, donde cada día contiene una descripción y solución detallada del problema abordado.
 
