@@ -1,0 +1,15 @@
+{
+  "name": "dia-1",
+  "version": "1.0.0",
+  "description": "## Escenario",
+  "main": "lambda.js",
+  "scripts": {
+    "build":"mkdir dist && babel ./ -s -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1692.0"
+  }
+}
